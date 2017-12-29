@@ -17,7 +17,7 @@ const config = {
     ],
 
     // Appended at the end of search queries to filter out some data
-    SEARCH_QUERY_FILTERS: ' -vote -filter:retweets',
+    SEARCH_QUERY_FILTERS: ' ',
 
     // Filter out tweets containing any phrases you want - just add them as strings in the array
     POST_SEARCH_FILTERS: [],
@@ -30,7 +30,7 @@ const config = {
     // Default: 'recent'   (return only the most recent results in the response)
     //          'mixed'    (Include both popular and real time results in the response)
     //          'popular'  (return only the most popular results in the response)
-    RESULT_TYPE: 'mixed',
+    RESULT_TYPE: 'recent',
 
     // Minimum amount of retweets a tweet needs before we retweet it.
     // - Significantly reduces the amount of fake contests retweeted and stops
@@ -56,7 +56,7 @@ const config = {
     RATE_LIMIT_EXCEEDED_TIMEOUT: 1000 * 60 * 10,
 
     // 15 seconds timeout for Retweets
-    RETWEET_TIMEOUT: 1000 * 15,
+    RETWEET_TIMEOUT: 1000 * 60,
 
     // 30 seconds for Search Timeout
     RATE_SEARCH_TIMEOUT: 1000 * 30,
